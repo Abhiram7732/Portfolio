@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Abhiram's Portfolio</title>
+  <style>
+    /* Background */
+    .background {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+      background: radial-gradient(circle at top left, #0a0f2c, #0c1b3b); /* Gradient background */
+    }
+
+    /* General Body Styling */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #ffffff;
+      overflow-x: hidden;
+      position: relative; /* Ensure content is above the background */
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #ffffff; /* White color for the title */
+      text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff; /* Reduced glow effect */
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .left-column {
+      flex: 1 1 300px;
+      min-width: 300px;
+    }
+
+    .right-column {
+      flex: 2 1 600px;
+      min-width: 300px;
+    }
+
+    .photo {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      display: block;
+      border: 3px solid #00ffff;
+      box-shadow: 0 0 10px #00ffff;
+    }
+
+    section {
+      background: rgba(0, 0, 50, 0.3);
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.2); /* Reduced glow */
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 2em;
+      color: #0000ff; /* Blue color for section headings */
+      text-shadow: 0 0 5px #0000ff, 0 0 10px #0000ff; /* Reduced glow effect */
+      border-bottom: 1px solid #0000ff;
+      padding-bottom: 5px;
+    }
+
+    p, ul, li {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 1em;
+      color: #ccc;
+    }
+
+    a {
+      color: #00ffff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      text-shadow: 0 0 8px #00ffff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background -->
+  <div class="background"></div>
+
+  <header>
+    <h1>Abhiram's Portfolio</h1>
+  </header>
+
+  <div class="container">
+    <!-- Left Side: Photo + About Me -->
+    <div class="left-column">
+      <img src="my_pic_mysorepalace.jpg" alt="My Photo" class="photo">
+      <section>
+        <h2>About Me</h2>
+        <p>Hello! I'm a coding enthusiast who loves creating impactful projects and exploring new technologies. Every day is an opportunity to learn, code, and innovate!</p>
+      </section>
+    </div>
+
+    <!-- Right Side: Other Sections -->
+    <div class="right-column">
+      <section>
+        <h2>Interests</h2>
+        <ul>
+          <li>Web Development</li>
+          <li>Machine Learning</li>
+          <li>Music</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        <ul>
+          <li><strong>Waste Sorting and Hardware Simulation:</strong> Built using React</li>
+          <li><strong>Supermarket Management System:</strong> Built using Java and MySQL</li>
+          <li><strong>Doctor Appointment System:</strong> Built using Python, HTML, CSS, JS</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:your.email@example.com">abhiramkrishna791@gmail.com</a></p>
+        <p>LinkedIn: <a href="#">https://www.linkedin.com/in/abhiram-sri-paravastu-169a3b352</a></p>
+        <p>GitHub: <a href="#">https://github.com/Abhiram7732</a></p>
+      </section>
+    </div>
+  </div>
+
+
+</body>
+</html>
